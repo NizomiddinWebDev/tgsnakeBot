@@ -1,0 +1,49 @@
+{
+  "name": "tgsnake",
+  "version": "1.2.0",
+  "description": "Telegram MTProto framework base gram.js",
+  "main": "./lib/index.js",
+  "scripts": {
+    "dev": "ts-node ./tes/index.ts",
+    "prepare": "husky install && echo \"🐍 Building snake package.\" && tsc",
+    "build": "tsc",
+    "build:docs": "node builddocs.js",
+    "prettier": "prettier --write ./src",
+    "prettier:quick": "pretty-quick --staged --pattern \"src/**/*.*(js|jsx|ts|tsx)\""
+  },
+  "homepage": "https://tgsnake.js.org",
+  "keywords": [
+    "tgsnake",
+    "telegram",
+    "mtproto",
+    "gramjs"
+  ],
+  "bugs": "https://github.com/butthx/tgsnake/issues",
+  "repository": "https://github.com/butthx/tgsnake",
+  "author": "butthx",
+  "license": "MIT",
+  "files": [
+    "lib/**/*"
+  ],
+  "private": false,
+  "dependencies": {
+    "axios": "^0.21.1",
+    "big-integer": "^1.6.48",
+    "file-type": "^16.5.0",
+    "prompts": "^2.4.1",
+    "telegram": "^1.7.15",
+    "tg-file-id": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.3.1",
+    "dotenv": "^10.0.0",
+    "husky": "^7.0.1",
+    "prettier": "^2.3.2",
+    "pretty-quick": "^3.1.1",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  },
+  "engines": {
+    "node": ">=12"
+  }
+}
